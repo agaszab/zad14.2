@@ -14,6 +14,7 @@ public class PrzeliczanieServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("UTF-8");
         request.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html");
         String tekst=request.getParameter("tekst");
         String[] tab = tekst.split(" ");
         String wyrazy= Arrays.toString(tab);
